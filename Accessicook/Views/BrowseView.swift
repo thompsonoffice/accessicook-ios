@@ -80,6 +80,7 @@ struct CategoryView: View {
         }
         .navigationTitle(category.name)
         .inlineTitle()
+        .tint(Color(uiColor: .label))
     }
 }
 

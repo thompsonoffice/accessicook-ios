@@ -181,6 +181,9 @@ struct EntryRow: View {
     let entry: Entry
     @EnvironmentObject private var store: CookbookStore
     @EnvironmentObject private var favorites: FavoritesStore
+    @Environment(\.colorScheme) private var scheme
+
+    private var ink: Color { scheme == .dark ? Color.white : Color.black }
 
     var body: some View {
         NavigationLink(value: Route.entry(entry.id)) {
@@ -188,19 +191,21 @@ struct EntryRow: View {
                 HStack(alignment: .firstTextBaseline, spacing: 6) {
                     Text(entry.title)
                         .font(.body.weight(.semibold))
+                        .foregroundStyle(ink)
                         .fixedSize(horizontal: false, vertical: true)
                     if favorites.contains(SavedKey.recipe(entry.id)) {
                         FavoriteMark()
                     }
                 }
                 Text(subtitle)
-                    .font(.subheadline)
-                    .readableSecondary()
+                    .font(.body)
+                    .foregroundStyle(ink)
                     .fixedSize(horizontal: false, vertical: true)
             }
             .padding(.vertical, 4)
             .accessibilityElement(children: .combine)
         }
+        .tint(ink)
     }
 
     private var subtitle: String {
