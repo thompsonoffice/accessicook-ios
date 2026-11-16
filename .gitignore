@@ -1,0 +1,9 @@
+Accessicook.xcodeproj/
+build/
+DerivedData/
+*.xcresult
+.DS_Store
+*.p8
+xcuserdata/
+__pycache__/
+.venv/
