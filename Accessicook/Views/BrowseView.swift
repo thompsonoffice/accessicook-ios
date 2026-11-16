@@ -11,11 +11,11 @@ struct BrowseView: View {
                 if let start = store.startHere {
                     Section {
                         EntryRow(entry: start)
+                        Text("A short lesson on reading Accessicook with VoiceOver or a braille display.")
+                            .font(.body)
+                            .fixedSize(horizontal: false, vertical: true)
                     } header: {
                         SectionHeader("Start here")
-                    } footer: {
-                        Text("A short lesson on reading Accessicook with VoiceOver or a braille display.")
-                            .readableSecondary()
                     }
                 }
                 if !recentKeys.isEmpty {
@@ -44,11 +44,11 @@ struct BrowseView: View {
                             )
                         }
                     }
+                    Text("\(store.lessonCount) lessons and \(store.recipeCount) recipes. Everything is stored in the app and works offline.")
+                        .font(.body)
+                        .fixedSize(horizontal: false, vertical: true)
                 } header: {
                     SectionHeader("Categories")
-                } footer: {
-                    Text("\(store.lessonCount) lessons and \(store.recipeCount) recipes. Everything is stored in the app and works offline.")
-                        .readableSecondary()
                 }
             }
             .navigationTitle("Accessicook")

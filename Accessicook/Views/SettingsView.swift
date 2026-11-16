@@ -73,11 +73,11 @@ struct SettingsView: View {
                     .font(.body)
                     .fixedSize(horizontal: false, vertical: true)
                     .accessibilityLabel("Text size sample. Heat the oven to 425 degrees F, then bake until the center feels set.")
+                Text("Every screen uses Dynamic Type. Use iPhone setting follows Settings, Accessibility, Display and Text Size. This includes the largest accessibility sizes.")
+                    .font(.body)
+                    .fixedSize(horizontal: false, vertical: true)
             } header: {
                 SectionHeader("Text")
-            } footer: {
-                Text("Every screen uses Dynamic Type. Use iPhone setting follows Settings, Accessibility, Display and Text Size. This includes the largest accessibility sizes.")
-                    .readableSecondary()
             }
 
             Section {
@@ -85,18 +85,18 @@ struct SettingsView: View {
                               value: contrast == .increased ? "On" : "Off, using the iPhone setting")
                 LabeledStatus(title: "Reduce Motion",
                               value: reduceMotion ? "On" : "Off, using the iPhone setting")
+                Text("Accessicook follows Increase Contrast, Bold Text, Reduce Motion, Differentiate Without Color, and Dark Mode from iPhone Settings. It does not replace those switches.")
+                    .font(.body)
+                    .fixedSize(horizontal: false, vertical: true)
             } header: {
                 SectionHeader("Display")
-            } footer: {
-                Text("Accessicook follows Increase Contrast, Bold Text, Reduce Motion, Differentiate Without Color, and Dark Mode from iPhone Settings. It does not replace those switches.")
-                    .readableSecondary()
             }
 
             Section {
                 if recents.keys.isEmpty && favorites.keys.isEmpty {
                     Text("Nothing is saved yet.")
                         .font(.body)
-                        .readableSecondary()
+                        .fixedSize(horizontal: false, vertical: true)
                 }
                 if !recents.keys.isEmpty {
                     Button("Clear Recently Viewed (\(recents.keys.count))", role: .destructive) { recents.removeAll() }
@@ -104,11 +104,11 @@ struct SettingsView: View {
                 if !favorites.keys.isEmpty {
                     Button("Remove All Favorites (\(favorites.keys.count))", role: .destructive) { confirmFavorites = true }
                 }
+                Text("Favorites, recently viewed pages, and the text size setting stay on this iPhone. Nothing is sent anywhere.")
+                    .font(.body)
+                    .fixedSize(horizontal: false, vertical: true)
             } header: {
                 SectionHeader("Saved on This iPhone")
-            } footer: {
-                Text("Favorites, recently viewed pages, and the text size setting stay on this iPhone. Nothing is sent anywhere.")
-                    .readableSecondary()
             }
         }
         .navigationTitle("Settings")
