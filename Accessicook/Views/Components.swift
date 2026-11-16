@@ -145,7 +145,8 @@ struct FavoriteButton: View {
         }
         .accessibilityLabel("Favorite")
         .accessibilityAddTraits(isOn ? .isSelected : [])
-        .buttonStyle(.bordered)
+        .buttonStyle(.plain)
+        .highContrastFill()
         .accessibilityHint(isOn
                            ? "Removes \(entry.title) from Favorites."
                            : "Adds \(entry.title) to Favorites. Saved on this iPhone only.")
@@ -165,7 +166,8 @@ struct ShareTextButton: View {
                 .font(.body)
                 .frame(maxWidth: .infinity, minHeight: 44, alignment: .leading)
         }
-        .buttonStyle(.bordered)
+        .buttonStyle(.plain)
+        .highContrastFill()
         .accessibilityHint("Shares or saves this page as a plain text file.")
     }
 }
@@ -267,6 +269,8 @@ struct BlockStack: View {
                 Link(destination: url) {
                     Text(linkLabel(url))
                         .font(.body)
+                        .foregroundStyle(Color(uiColor: .label))
+                        .underline()
                         .fixedSize(horizontal: false, vertical: true)
                         .frame(maxWidth: .infinity, minHeight: 44, alignment: .leading)
                 }
@@ -296,6 +300,20 @@ struct BlockStack: View {
     }
 }
 
+/// Filled control: background-colored words on the label color, which clears the contrast audit in both appearances.
+struct HighContrastFill: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .foregroundStyle(Color(uiColor: .systemBackground))
+            .background(Color(uiColor: .label))
+            .clipShape(RoundedRectangle(cornerRadius: 12))
+    }
+}
+
+extension View {
+    func highContrastFill() -> some View { modifier(HighContrastFill()) }
+}
+
 /// Full-width control used in cooking mode. The words are the VoiceOver label. Icons are hidden.
 struct LargeTextButton: View {
     let title: String
@@ -320,27 +338,20 @@ struct LargeTextButton: View {
             .frame(maxWidth: .infinity, minHeight: 60)
             .padding(.vertical, 8)
             .padding(.horizontal, 12)
-        }
-        .accessibilityIdentifier(identifier)
-        .overlay {
-            if contrast == .increased {
+            .foregroundStyle(prominent ? Color(uiColor: .systemBackground) : Color(uiColor: .label))
+            .background(prominent ? Color(uiColor: .label) : Color(uiColor: .systemBackground))
+            .overlay {
                 RoundedRectangle(cornerRadius: 14)
-                    .strokeBorder(Color.primary, lineWidth: 3)
+                    .strokeBorder(Color(uiColor: .label), lineWidth: prominent ? 0 : 3)
                     .allowsHitTesting(false)
                     .accessibilityHidden(true)
             }
+            .clipShape(RoundedRectangle(cornerRadius: 14))
         }
+        .buttonStyle(.plain)
+        .accessibilityIdentifier(identifier)
 
-        if prominent {
-            styled(button
-                .buttonStyle(.borderedProminent)
-                .tint(Color.accentColor)
-                .foregroundStyle(Color.white))
-        } else {
-            styled(button
-                .buttonStyle(.bordered)
-                .foregroundStyle(Color.primary))
-        }
+        styled(button)
     }
 
     @ViewBuilder private func styled<V: View>(_ view: V) -> some View {

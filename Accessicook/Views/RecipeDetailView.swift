@@ -40,10 +40,10 @@ struct RecipeDetailView: View {
                             }
                             .frame(maxWidth: .infinity, minHeight: 60)
                             .padding(.vertical, 8)
+                            .padding(.horizontal, 12)
+                            .highContrastFill()
                         }
-                        .buttonStyle(.borderedProminent)
-                        .tint(Color.accentColor)
-                        .foregroundStyle(Color.white)
+                        .buttonStyle(.plain)
                         .accessibilityHint("Reads \(entry.title) one step at a time, with large Next and Previous buttons.")
                         .accessibilityIdentifier("cookButton")
                     }

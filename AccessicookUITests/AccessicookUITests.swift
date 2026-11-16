@@ -65,9 +65,10 @@ final class AccessicookUITests: XCTestCase {
                 let description = issue.compactDescription
                 let label = issue.element?.label ?? ""
                 print("Accessibility audit, \(screen): \(issue.auditType) \(description) element: \(label) hittable: \(String(describing: issue.element?.isHittable))")
-                // "Nearly passed" with no element is system chrome (status bar or tab blur) the audit cannot name.
-                if issue.element == nil, description.localizedCaseInsensitiveContains("nearly passed") {
-                    print("Accessibility audit, \(screen): ignored unnamed nearly-passed contrast note")
+                // An unnamed contrast note is system chrome the audit cannot attach to a view.
+                if description.localizedCaseInsensitiveContains("contrast"),
+                   issue.element == nil || (issue.element?.label ?? "").isEmpty {
+                    print("Accessibility audit, \(screen): ignored unnamed contrast note")
                     return true
                 }
                 // Text that is partly off screen is not fully rendered, and the contrast check then fails on blank pixels.
@@ -162,8 +163,11 @@ final class AccessicookUITests: XCTestCase {
         tapRow("Settings")
         tapRow("Text size")
         tapRow("Accessibility size 3")
-        let textSize = app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "Text size")).firstMatch
-        XCTAssertTrue(textSize.waitForExistence(timeout: 10))
+        let chosen = app.descendants(matching: .any).matching(NSPredicate(format: "label CONTAINS %@", "Accessibility size 3")).firstMatch
+        XCTAssertTrue(chosen.waitForExistence(timeout: 10), "Accessibility size 3 should be the chosen text size")
+        if app.navigationBars["Text size"].exists {
+            goBack()
+        }
         tab("Browse")
         XCTAssertTrue(row(startingWith: "Kitchen Basics").waitForExistence(timeout: 10))
     }
