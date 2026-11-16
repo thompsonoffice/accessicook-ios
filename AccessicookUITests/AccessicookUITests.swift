@@ -59,6 +59,7 @@ final class AccessicookUITests: XCTestCase {
 
     private func audit(_ screen: String, file: StaticString = #filePath, line: UInt = #line) {
         guard #available(iOS 17.0, *) else { return }
+        let window = app.windows.firstMatch.frame
         do {
             try app.performAccessibilityAudit { issue in
                 let description = issue.compactDescription
@@ -71,7 +72,6 @@ final class AccessicookUITests: XCTestCase {
                 }
                 // Text that is partly off screen is not fully rendered, and the contrast check then fails on blank pixels.
                 if let element = issue.element, description.localizedCaseInsensitiveContains("contrast") {
-                    let window = app.windows.firstMatch.frame
                     let frame = element.frame
                     let fullyOnScreen = frame.minY >= window.minY - 1
                         && frame.maxY <= window.maxY + 1
