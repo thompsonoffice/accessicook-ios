@@ -42,7 +42,8 @@ struct FavoritesView: View {
                         .font(.body)
                         .frame(maxWidth: .infinity, minHeight: 44)
                 }
-                .buttonStyle(.bordered)
+                .buttonStyle(.plain)
+                .highContrastFill()
                 .padding()
                 .background(Color(uiColor: .systemBackground))
             }
