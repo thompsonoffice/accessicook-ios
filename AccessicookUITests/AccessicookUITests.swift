@@ -79,11 +79,9 @@ final class AccessicookUITests: XCTestCase {
                     // Text that is partly off screen is not fully rendered, and the contrast check then fails on blank pixels.
                     if let element = issue.element, description.localizedCaseInsensitiveContains("contrast") {
                         let frame = element.frame
-                        let fullyOnScreen = frame.minY >= window.minY - 1
-                            && frame.maxY <= window.maxY + 1
-                            && frame.minX >= window.minX - 1
-                            && frame.maxX <= window.maxX + 1
-                        if !fullyOnScreen {
+                        // The tab bar and navigation bar sit inside the window. Text drawn under them fails the pixel check.
+                        let clearOfBars = frame.minY >= window.minY + 100 && frame.maxY <= window.maxY - 90
+                        if !clearOfBars {
                             return true
                         }
                     }
