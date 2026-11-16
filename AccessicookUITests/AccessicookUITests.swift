@@ -60,39 +60,48 @@ final class AccessicookUITests: XCTestCase {
     private func audit(_ screen: String, file: StaticString = #filePath, line: UInt = #line) {
         guard #available(iOS 17.0, *) else { return }
         let window = app.windows.firstMatch.frame
-        do {
-            try app.performAccessibilityAudit { issue in
-                let description = issue.compactDescription
-                let label = issue.element?.label ?? ""
-                print("Accessibility audit, \(screen): \(issue.auditType) \(description) element: \(label) hittable: \(String(describing: issue.element?.isHittable))")
-                // "Nearly passed" is the audit's own borderline note, usually anti-aliasing on small text.
-                if description.localizedCaseInsensitiveContains("nearly passed") {
-                    print("Accessibility audit, \(screen): ignored nearly-passed contrast note")
-                    return true
-                }
-                // An unnamed contrast note is system chrome the audit cannot attach to a view.
-                if description.localizedCaseInsensitiveContains("contrast"),
-                   issue.element == nil || (issue.element?.label ?? "").isEmpty {
-                    print("Accessibility audit, \(screen): ignored unnamed contrast note")
-                    return true
-                }
-                // Text that is partly off screen is not fully rendered, and the contrast check then fails on blank pixels.
-                if let element = issue.element, description.localizedCaseInsensitiveContains("contrast") {
-                    let frame = element.frame
-                    let fullyOnScreen = frame.minY >= window.minY - 1
-                        && frame.maxY <= window.maxY + 1
-                        && frame.minX >= window.minX - 1
-                        && frame.maxX <= window.maxX + 1
-                    if !fullyOnScreen || !element.isHittable {
-                        print("Accessibility audit, \(screen): ignored contrast on text that is not fully on screen")
+        var lastError: Error?
+        for attempt in 1...2 {
+            do {
+                try app.performAccessibilityAudit { issue in
+                    let description = issue.compactDescription
+                    let label = issue.element?.label ?? ""
+                    print("Accessibility audit, \(screen): \(issue.auditType) \(description) element: \(label)")
+                    // "Nearly passed" is the audit's own borderline note, usually anti-aliasing on small text.
+                    if description.localizedCaseInsensitiveContains("nearly passed") {
                         return true
                     }
+                    // An unnamed contrast note is system chrome the audit cannot attach to a view.
+                    if description.localizedCaseInsensitiveContains("contrast"),
+                       issue.element == nil || label.isEmpty {
+                        return true
+                    }
+                    // Text that is partly off screen is not fully rendered, and the contrast check then fails on blank pixels.
+                    if let element = issue.element, description.localizedCaseInsensitiveContains("contrast") {
+                        let frame = element.frame
+                        let fullyOnScreen = frame.minY >= window.minY - 1
+                            && frame.maxY <= window.maxY + 1
+                            && frame.minX >= window.minX - 1
+                            && frame.maxX <= window.maxX + 1
+                        if !fullyOnScreen {
+                            return true
+                        }
+                    }
+                    return false
                 }
-                return false
+                print("Accessibility audit, \(screen): no issues")
+                return
+            } catch {
+                lastError = error
+                if String(describing: error).localizedCaseInsensitiveContains("in time"), attempt == 1 {
+                    print("Accessibility audit, \(screen): timed out, retrying")
+                    continue
+                }
+                XCTFail("Audit on \(screen) could not run: \(error)", file: file, line: line)
             }
-            print("Accessibility audit, \(screen): no issues")
-        } catch {
-            XCTFail("Audit on \(screen) could not run: \(error)", file: file, line: line)
+        }
+        if let lastError {
+            XCTFail("Audit on \(screen) could not run: \(lastError)", file: file, line: line)
         }
     }
 
