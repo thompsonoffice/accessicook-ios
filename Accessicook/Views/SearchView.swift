@@ -19,7 +19,7 @@ struct SearchView: View {
             List {
                 Section {
                     Picker("Category", selection: $categoryID) {
-                        Text("All categories").tag(SearchView.allCategories)
+                        Text("All").tag(SearchView.allCategories)
                         ForEach(store.categories) { category in
                             Text(category.name).tag(category.id)
                         }
