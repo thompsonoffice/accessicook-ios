@@ -35,27 +35,29 @@ struct ContentView: View {
 struct MoreView: View {
     var body: some View {
         NavigationStack {
-            List {
-                Section {
+            ScrollView {
+                VStack(alignment: .leading, spacing: 16) {
+                    Text("On this iPhone")
+                        .font(.title2.weight(.bold))
+                        .accessibilityAddTraits(.isHeader)
                     NavigationLink(value: Route.settings) {
                         Text("Settings").font(.body).frame(maxWidth: .infinity, minHeight: 44, alignment: .leading)
                     }
                     NavigationLink(value: Route.recents) {
                         Text("Recently Viewed").font(.body).frame(maxWidth: .infinity, minHeight: 44, alignment: .leading)
                     }
-                } header: {
-                    SectionHeader("On this iPhone")
-                }
-                Section {
+                    Text("About")
+                        .font(.title2.weight(.bold))
+                        .accessibilityAddTraits(.isHeader)
                     NavigationLink(value: Route.about) {
                         Text("About Accessicook").font(.body).frame(maxWidth: .infinity, minHeight: 44, alignment: .leading)
                     }
                     NavigationLink(value: Route.privacy) {
                         Text("Privacy Policy").font(.body).frame(maxWidth: .infinity, minHeight: 44, alignment: .leading)
                     }
-                } header: {
-                    SectionHeader("About")
                 }
+                .padding()
+                .frame(maxWidth: .infinity, alignment: .leading)
             }
             .navigationTitle("More")
             .accessicookDestinations()

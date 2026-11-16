@@ -14,7 +14,6 @@ struct FavoritesView: View {
                 if saved.isEmpty {
                     Text("No favorites yet. Open a recipe or lesson and choose Favorite. Favorites stay on this iPhone.")
                         .font(.body)
-                        .readableSecondary()
                         .fixedSize(horizontal: false, vertical: true)
                 } else {
                     Section {
@@ -27,7 +26,8 @@ struct FavoritesView: View {
                                     Button(role: .destructive) {
                                         favorites.remove(SavedKey.recipe(entry.id))
                                     } label: {
-                                        Label("Remove from Favorites", systemImage: "star.slash")
+                                        Text("Remove from Favorites")
+                                            .font(.body)
                                     }
                                 }
                         }
@@ -35,15 +35,16 @@ struct FavoritesView: View {
                         SectionHeader("\(saved.count) \(saved.count == 1 ? "favorite" : "favorites")")
                     }
                 }
-                Section {
-                    NavigationLink(value: Route.recents) {
-                        Text("Recently Viewed")
-                            .font(.body)
-                            .frame(maxWidth: .infinity, minHeight: 44, alignment: .leading)
-                    }
-                } header: {
-                    SectionHeader("Also on this iPhone")
+            }
+            .safeAreaInset(edge: .bottom) {
+                NavigationLink(value: Route.recents) {
+                    Text("Recently Viewed")
+                        .font(.body)
+                        .frame(maxWidth: .infinity, minHeight: 44)
                 }
+                .buttonStyle(.bordered)
+                .padding()
+                .background(Color(uiColor: .systemBackground))
             }
             .navigationTitle("Favorites")
             .accessicookDestinations()
