@@ -1,0 +1,53 @@
+============================================================
+ACCESSICOOK
+Food Safety and USDA Temperatures
+============================================================
+
+INTRODUCTION
+You cannot see, smell, or taste the bacteria that cause many foodborne illnesses. Safe cooking in this book rests on four USDA rules: Clean, Separate, Cook, and Chill. This chapter is the reference page for temperatures and leftovers. The individual recipes repeat the numbers that apply to that dish.
+
+CLEAN
+Wash your hands with soap and water before you cook, after you handle raw meat, poultry, eggs, or flour, after you use the restroom, and before you serve. Wash cutting boards, knives, thermometers, and counters with soap and hot water after they touch raw meat or eggs.
+
+SEPARATE
+Keep raw meat and poultry and their juices away from foods that will not be cooked again, including bread, salad, fruit, and cooked meat. Use a separate board, or wash the board thoroughly between tasks. Do not put cooked chicken back on the plate that held it raw unless that plate has been washed.
+
+COOK TO A SAFE INTERNAL TEMPERATURE
+Use a food thermometer in the center of the thickest part, without touching bone or the pan. USDA minimums used in this book are:
+
+- All poultry, including chicken pieces, turkey, ground poultry, and turkey bacon: 165 degrees F
+- Ground beef, ground pork, and other ground meats: 160 degrees F
+- Beef, pork, lamb, and veal steaks, chops, and roasts: 145 degrees F, then rest at least 3 minutes
+- Fish: 145 degrees F, or until the flesh is opaque and flakes easily
+- Shrimp, lobster, and crab: cook until the flesh is pearly, opaque, and firm
+- Eggs: cook until the yolk and white are firm
+- Egg dishes, such as casseroles, quiches, and the omelettes in this book: 160 degrees F
+- Leftovers and casseroles: 165 degrees F
+- Fresh or uncooked ham: 145 degrees F, then rest at least 3 minutes
+- Fully cooked ham, to reheat: 140 degrees F if it was packaged in a USDA-inspected plant, otherwise 165 degrees F
+
+Color is not a reliable test. Cured bacon and some ground meat can stay pink after they are safe. Poultry can look white before it is 165 degrees F, or still look slightly pink after it is. Trust the thermometer.
+
+CHILL
+Bacteria multiply quickly between 40 and 140 degrees F, a range often called the Danger Zone. Refrigerate perishable leftovers within 2 hours of cooking, or within 1 hour if the room is hotter than 90 degrees F. Cool large pots in shallow containers. Keep the refrigerator at 40 degrees F or below.
+
+Eat refrigerated leftovers within 3 to 4 days, or freeze them. Reheat leftovers to 165 degrees F. Bring leftover soups, sauces, and gravies to a boil.
+
+THAW SAFELY
+Thaw meat and poultry in the refrigerator, in cold water in a leak-proof bag, or in the microwave if you will cook the food right away. Do not thaw on the counter at room temperature.
+
+WHEN YOU SHOULD BE EXTRA CAREFUL
+Pregnant people, young children, older adults, and anyone with a weaker immune system should be especially careful about following these temperatures, and should avoid undercooked eggs, undercooked meat, and unpasteurized juices or dairy unless a doctor has given different advice. This book defaults to fully cooked eggs and to USDA temperatures.
+
+SOURCES
+Safe Minimum Internal Temperature Chart, USDA Food Safety and Inspection Service:
+https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/safe-temperature-chart/
+
+Cook to a Safe Minimum Internal Temperature, FoodSafety.gov:
+https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures
+
+Leftovers and Food Safety, USDA Food Safety and Inspection Service:
+https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/leftovers-and-food-safety
+
+Keep Food Safe! Food Safety Basics, USDA Food Safety and Inspection Service:
+https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/steps-keep-food-safe

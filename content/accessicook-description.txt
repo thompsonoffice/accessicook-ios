@@ -1,0 +1,20 @@
+Accessicook: the one-stop cookbook for cooking while blind.
+
+327 recipes written so blind and low-vision cooks, and the people who cook alongside them, can follow every step. Every recipe uses the same headings in the same order, one action per numbered step, plain language, and cooking terms explained the first time they appear. Measurements and temperatures are spelled out (for example "1/2 teaspoon (half a teaspoon)" and "165 degrees F") so they read cleanly with a screen reader.
+
+Doneness cues are non-visual first: sound, smell, texture, time, and a talking thermometer, with visual cues included for a sighted helper. Food-safety temperatures follow USDA guidance.
+
+What's inside:
+- Kitchen Basics: 13 short lessons on setting up, measuring by touch, knife safety, using the stove and oven, and more
+- Breakfast: 40 recipes
+- Lunch: 55 recipes
+- Supper: 73 recipes
+- Baked Goods: 58 recipes
+- Midnight Snacks: 36 recipes
+- Misc (sides, sauces, appetizers, drinks, staples): 65 recipes
+
+Includes boneless wings, baby back ribs, lamb chops, chicken nuggets, beef tips over mashed potatoes and gravy, spaghetti, Alfredo, chili, omelettes, bacon, popcorn, jalapeño poppers, and much more.
+
+Format: plain UTF-8 text files in one ZIP, one recipe per file, with an index, a table of contents, and a single combined file you can search. Works with VoiceOver, NVDA, JAWS, Narrator, braille displays, or any text reader.
+
+Honest notes: this is everyday American home cooking. Deep frying is left out on purpose for safety. A few breads start from store-bought dough. The recipes have not been individually kitchen-tested and the files have not been formally screen-reader tested. Written with AI assistance and reviewed for consistency.

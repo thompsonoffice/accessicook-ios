@@ -1,0 +1,59 @@
+============================================================
+ACCESSICOOK
+How to Use This Book with VoiceOver, NVDA, and a Braille Display
+============================================================
+
+INTRODUCTION
+Accessicook is a plain-text cookbook written so a blind or low-vision cook, and a sighted helper if you have one, can follow the same page. Every recipe uses the same heading order, short numbered steps, and doneness cues you can hear, smell, feel, or measure, plus visual cues a helper can speak out loud.
+
+This chapter explains how to move through the files, how a recipe is organized, and how to cook from a phone, computer, or braille display without getting lost at the stove.
+
+THE FILES IN THIS BOOK
+The book lives in a folder called Accessicook. Inside it you will find:
+
+- README.txt, which is the best place to start
+- INDEX.txt, an alphabetical list and a list by category, with file paths
+- CONTENTS.txt, the full table of contents, including these teaching chapters
+- Accessicook-all-recipes.txt, one large file with every chapter and recipe in order, useful if you want to search a single document or copy the book to a notetaker
+- Numbered category folders, such as 01-breakfast and 02-mains, each holding individual recipe files
+
+File names start with a number so they sort in a sensible order. Recipe file names are descriptive, for example 01-omelette.txt.
+
+HOW TO READ THE FILES
+All files are plain UTF-8 text. There are no tables, no images, and no steps that depend on color alone. You can open them in a text editor, in Books or a similar app, or on a braille display.
+
+VoiceOver on iPhone, iPad, or Mac, and NVDA or JAWS on Windows, will read the files straight through. Headings are written in capital letters on their own lines, such as STEPS and SAFETY. Some apps will not treat those lines as official headings in a heading list. If that happens, use find and search for a word like STEPS, INGREDIENTS, or SAFETY, or read the short sections in order.
+
+Temperatures are written as "165 degrees F" so they are spoken clearly. Fractions are written in ordinary recipe form, with a short spoken cue when needed, such as "1/2 teaspoon (half a teaspoon)."
+
+If you use a phone at the stove, set it back from the burners, use a stand or a raised lip so it cannot slide forward, and pause the reader when you need both hands. A talking timer or a voice assistant is safer for timing than handling a phone over a hot pan. A braille display can sit on the counter away from water and heat.
+
+HOW EACH RECIPE IS ORGANIZED
+Every recipe follows this order:
+
+1. A short introduction
+2. Servings, total time, and difficulty
+3. Equipment, including accessible tools when they help
+4. Ingredients, with tactile tips for measuring and identifying them
+5. A short "Before you start" note
+6. Numbered steps
+7. How to tell when it is done, with non-visual cues and visual cues for a helper
+8. Safety
+9. Tips and variations
+10. Leftovers
+11. Sources
+
+Read the introduction, time, and safety section once before you cook, especially the first time. Then set out equipment and ingredients before you turn on any heat. Work the numbered steps in order. Use the tips after you know the basic method.
+
+COOKING WITH A HELPER
+If you are cooking with an in-home care worker or another partner, agree on roles before the heat goes on. One useful split is: the cook who knows the recipe leads, the helper reads the next step out loud, handles a visual check when the recipe asks for one, and spots hot pans. The helper should not silently take over a step. Ask for a specific check, such as "Does the chicken look opaque, and what is the thermometer reading?" rather than "Is it done?"
+
+Both of you should hear the thermometer temperature. If you disagree, measure again in a second spot.
+
+For more on working together, see the README in this book.
+
+SEARCHING AND JUMPING
+In the combined file, search for the recipe title, or for ACCESSICOOK followed by the title. In the index, search for the dish you want and then open the path listed next to it. If you remember only the category, open that folder and move through the file names.
+
+A NOTE ON TONE
+These pages are written as cooking lessons for adults. They describe what food feels, sounds, and smells like when it is going well and when it is not. They do not assume you can see the pan, and they do not talk down to you.

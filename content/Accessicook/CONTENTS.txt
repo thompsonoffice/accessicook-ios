@@ -1,0 +1,369 @@
+============================================================
+ACCESSICOOK
+CONTENTS
+============================================================
+
+This index lists every chapter and recipe in the book, in the order they appear in the folders. Each line has a number, a file name, and a title. Use this file, or the folder list in your file reader, to jump to a page.
+
+The six recipe categories are Breakfast, Lunch, Supper, Baked Goods, Midnight Snacks, and Misc. Misc includes sides, sauces, appetizers, drinks, and staples. Kitchen Basics is a teaching section at the start of the book, not a recipe category.
+
+KITCHEN BASICS
+
+1. 01-how-to-use-this-book.txt  How to Use This Book
+2. 02-setting-up-an-accessible-kitchen.txt  Setting Up an Accessible Kitchen
+3. 03-adaptive-tools.txt  Adaptive Tools
+4. 04-knife-skills.txt  Knife Skills
+5. 05-measuring.txt  Measuring
+6. 06-stovetop-skills.txt  Stovetop Skills
+7. 07-oven-skills.txt  Oven Skills
+8. 08-microwave-skills.txt  Microwave Skills
+9. 09-air-fryer-skills.txt  Air Fryer Skills
+10. 10-food-safety.txt  Food Safety
+11. 11-shopping-labeling-storing.txt  Shopping, Labeling, and Storing
+12. 12-cleaning-up-safely.txt  Cleaning Up Safely
+13. 13-first-week-practice-plan.txt  First-Week Practice Plan
+
+BREAKFAST
+
+1. 01-omelette.txt  Omelette
+2. 02-bacon.txt  Bacon
+3. 03-avocado-toast.txt  Avocado Toast
+4. 04-bagels-with-cream-cheese.txt  Bagels with Cream Cheese
+5. 05-baked-eggs.txt  Baked Eggs in Ramekins
+6. 06-baked-oatmeal.txt  Baked Oatmeal
+7. 07-biscuits-and-sausage-gravy.txt  Biscuits and Sausage Gravy
+8. 08-breakfast-burritos.txt  Breakfast Burritos
+9. 09-breakfast-potatoes.txt  Breakfast Potatoes
+10. 10-breakfast-quesadilla.txt  Breakfast Quesadilla
+11. 11-breakfast-sandwiches.txt  Breakfast Sandwiches
+12. 12-breakfast-sausage.txt  Breakfast Sausage
+13. 13-breakfast-skillet.txt  Breakfast Skillet
+14. 14-breakfast-tacos.txt  Breakfast Tacos
+15. 15-chia-pudding.txt  Chia Pudding
+16. 16-cinnamon-toast.txt  Cinnamon Toast
+17. 17-corned-beef-hash.txt  Corned Beef Hash
+18. 18-cottage-cheese-bowl.txt  Cottage Cheese Breakfast Bowl
+19. 19-cream-of-wheat.txt  Cream of Wheat
+20. 20-crepes.txt  Crepes
+21. 21-dutch-baby.txt  Dutch Baby Pancake
+22. 22-egg-muffins.txt  Egg Muffins
+23. 23-french-toast.txt  French Toast
+24. 24-french-toast-casserole.txt  French Toast Casserole
+25. 25-fried-eggs.txt  Fried Eggs Cooked Through
+26. 26-frittata.txt  Frittata
+27. 27-fruit-smoothie.txt  Fruit Smoothie
+28. 28-granola.txt  Granola
+29. 29-grits.txt  Grits
+30. 30-hard-boiled-eggs.txt  Hard-Boiled Eggs
+31. 31-oatmeal.txt  Oatmeal
+32. 32-overnight-oats.txt  Overnight Oats
+33. 33-pancakes.txt  Pancakes
+34. 34-scrambled-eggs.txt  Scrambled Eggs
+35. 35-shakshuka.txt  Shakshuka
+36. 36-smoked-salmon-bagel.txt  Smoked Salmon Bagel
+37. 37-smoothie-bowl.txt  Smoothie Bowl
+38. 38-tofu-scramble.txt  Tofu Scramble
+39. 39-waffles.txt  Waffles
+40. 40-yogurt-parfait.txt  Yogurt Parfait
+
+LUNCH
+
+1. 01-chicken-nuggets.txt  Chicken Nuggets
+2. 02-bbq-chicken-sandwich.txt  BBQ Chicken Sandwich
+3. 03-bean-and-cheese-burritos.txt  Bean and Cheese Burritos
+4. 04-black-bean-soup.txt  Black Bean Soup
+5. 05-blt.txt  BLT
+6. 06-broccoli-cheddar-soup.txt  Broccoli Cheddar Soup
+7. 07-broccoli-salad.txt  Broccoli Salad
+8. 08-butternut-squash-soup.txt  Butternut Squash Soup
+9. 09-caesar-salad.txt  Caesar Salad
+10. 10-caprese-salad.txt  Caprese Salad
+11. 11-caprese-sandwich.txt  Caprese Sandwich
+12. 12-chef-salad.txt  Chef Salad
+13. 13-chicken-and-rice-soup.txt  Chicken and Rice Soup
+14. 14-chicken-caesar-salad.txt  Chicken Caesar Salad
+15. 15-chicken-caesar-wrap.txt  Chicken Caesar Wrap
+16. 16-chicken-noodle-soup.txt  Chicken Noodle Soup
+17. 17-chicken-salad.txt  Chicken Salad
+18. 18-chicken-tortilla-soup.txt  Chicken Tortilla Soup
+19. 19-club-sandwich.txt  Club Sandwich
+20. 20-cobb-salad.txt  Cobb Salad
+21. 21-corn-chowder.txt  Corn Chowder
+22. 22-cucumber-tomato-salad.txt  Cucumber Tomato Salad
+23. 23-egg-salad.txt  Egg Salad
+24. 24-falafel-pita.txt  Falafel Pita
+25. 25-fish-sandwich.txt  Fish Sandwich
+26. 26-french-dip.txt  French Dip
+27. 27-fruit-salad.txt  Fruit Salad
+28. 28-garden-salad.txt  Garden Salad
+29. 29-greek-salad.txt  Greek Salad
+30. 30-grilled-chicken-sandwich.txt  Grilled Chicken Sandwich
+31. 31-ham-and-cheese-sandwich.txt  Ham and Cheese Sandwich
+32. 32-hot-dogs.txt  Hot Dogs
+33. 33-hummus-veggie-wrap.txt  Hummus Veggie Wrap
+34. 34-lentil-soup.txt  Lentil Soup
+35. 35-minestrone.txt  Minestrone
+36. 36-miso-soup.txt  Miso Soup
+37. 37-pasta-salad.txt  Pasta Salad
+38. 38-philly-cheesesteak.txt  Philly Cheesesteak
+39. 39-potato-soup.txt  Potato Soup
+40. 40-quesadillas.txt  Quesadillas
+41. 41-reuben.txt  Reuben
+42. 42-rice-and-bean-bowl.txt  Rice and Bean Bowl
+43. 43-spinach-salad.txt  Spinach Salad
+44. 44-split-pea-soup.txt  Split Pea Soup
+45. 45-stovetop-mac-and-cheese.txt  Stovetop Mac and Cheese
+46. 46-taco-salad.txt  Taco Salad
+47. 47-taco-soup.txt  Taco Soup
+48. 48-three-bean-salad.txt  Three Bean Salad
+49. 49-tomato-soup.txt  Tomato Soup
+50. 50-tuna-melt.txt  Tuna Melt
+51. 51-tuna-salad.txt  Tuna Salad
+52. 52-turkey-sandwich.txt  Turkey Sandwich
+53. 53-vegetable-soup.txt  Vegetable Soup
+54. 54-veggie-sandwich.txt  Veggie Sandwich
+55. 55-waldorf-salad.txt  Waldorf Salad
+
+SUPPER
+
+1. 01-beef-tips-and-mashed-potatoes.txt  Beef Tips and Mashed Potatoes
+2. 02-spaghetti-with-meat-sauce.txt  Spaghetti with Meat Sauce
+3. 03-baby-back-ribs.txt  Baby Back Ribs
+4. 04-lamb-chops.txt  Lamb Chops
+5. 05-pasta-primer.txt  A Simple Pasta Primer
+6. 06-fettuccine-alfredo.txt  Fettuccine Alfredo
+7. 07-chili.txt  Chili
+8. 08-baked-chicken-breasts.txt  Baked Chicken Breasts
+9. 09-baked-chicken-drumsticks.txt  Baked Chicken Drumsticks
+10. 10-baked-ham.txt  Baked Ham
+11. 11-baked-mac-and-cheese.txt  Baked Mac and Cheese
+12. 12-baked-salmon.txt  Baked Salmon
+13. 13-baked-white-fish.txt  Baked White Fish
+14. 14-baked-ziti.txt  Baked Ziti
+15. 15-bbq-chicken.txt  BBQ Chicken
+16. 16-beef-and-broccoli.txt  Beef and Broccoli
+17. 17-beef-burritos.txt  Beef Burritos
+18. 18-beef-enchiladas.txt  Beef Enchiladas
+19. 19-beef-stir-fry.txt  Beef Stir-Fry
+20. 20-black-bean-tacos.txt  Black Bean Tacos
+21. 21-breaded-chicken-cutlets.txt  Breaded Chicken Cutlets
+22. 22-burgers.txt  Burgers
+23. 23-chicken-fajitas.txt  Chicken Fajitas
+24. 24-chicken-parmesan.txt  Chicken Parmesan
+25. 25-chicken-stir-fry.txt  Chicken Stir-Fry
+26. 26-chickpea-curry.txt  Chickpea Curry
+27. 27-corned-beef-and-cabbage.txt  Corned Beef and Cabbage
+28. 28-cottage-pie.txt  Cottage Pie
+29. 29-crab-cakes.txt  Crab Cakes
+30. 30-eggplant-parmesan.txt  Eggplant Parmesan
+31. 31-fish-tacos.txt  Fish Tacos
+32. 32-garlic-butter-shrimp.txt  Garlic Butter Shrimp
+33. 33-ground-turkey-skillet.txt  Ground Turkey Skillet
+34. 34-honey-mustard-chicken.txt  Honey Mustard Chicken
+35. 35-lamb-stew.txt  Lamb Stew
+36. 36-lasagna.txt  Lasagna
+37. 37-lemon-garlic-chicken.txt  Lemon Garlic Chicken
+38. 38-meatballs-in-tomato-sauce.txt  Meatballs in Tomato Sauce
+39. 39-meatloaf.txt  Meatloaf
+40. 40-mushroom-risotto.txt  Mushroom Risotto
+41. 41-pan-cooked-chicken-thighs.txt  Pan-Cooked Chicken Thighs
+42. 42-pan-seared-salmon.txt  Pan-Seared Salmon
+43. 43-pan-seared-steak.txt  Pan-Seared Steak
+44. 44-pasta-primavera.txt  Pasta Primavera
+45. 45-pasta-with-pesto.txt  Pasta with Pesto
+46. 46-pork-carnitas.txt  Pork Carnitas
+47. 47-pork-chops.txt  Pork Chops
+48. 48-pork-stir-fry.txt  Pork Stir-Fry
+49. 49-pork-tenderloin.txt  Pork Tenderloin
+50. 50-pot-roast.txt  Pot Roast
+51. 51-pulled-pork.txt  Pulled Pork
+52. 52-roast-chicken.txt  Roast Chicken
+53. 53-roast-turkey-breast.txt  Roast Turkey Breast
+54. 54-salisbury-steak.txt  Salisbury Steak
+55. 55-salmon-patties.txt  Salmon Patties
+56. 56-sausage-and-peppers.txt  Sausage and Peppers
+57. 57-sheet-pan-chicken-and-vegetables.txt  Sheet-Pan Chicken and Vegetables
+58. 58-sheet-pan-pizza.txt  Sheet-Pan Pizza
+59. 59-sheet-pan-sausage-and-vegetables.txt  Sheet-Pan Sausage and Vegetables
+60. 60-shrimp-and-grits.txt  Shrimp and Grits
+61. 61-shrimp-stir-fry.txt  Shrimp Stir-Fry
+62. 62-sloppy-joes.txt  Sloppy Joes
+63. 63-spaghetti-and-meatballs.txt  Spaghetti and Meatballs
+64. 64-stuffed-peppers.txt  Stuffed Peppers
+65. 65-taco-skillet.txt  Taco Skillet
+66. 66-tacos.txt  Tacos
+67. 67-teriyaki-chicken.txt  Teriyaki Chicken
+68. 68-tofu-stir-fry.txt  Tofu Stir-Fry
+69. 69-turkey-burgers.txt  Turkey Burgers
+70. 70-vegetable-enchiladas.txt  Vegetable Enchiladas
+71. 71-vegetable-stir-fry.txt  Vegetable Stir-Fry
+72. 72-vegetarian-chili.txt  Vegetarian Chili
+73. 73-veggie-burgers.txt  Veggie Burgers
+
+BAKED GOODS
+
+1. 01-apple-cinnamon-muffins.txt  Apple Cinnamon Muffins
+2. 02-apple-crisp.txt  Apple Crisp
+3. 03-apple-pie.txt  Apple Pie
+4. 04-baked-cheesecake.txt  Baked Cheesecake
+5. 05-baking-powder-biscuits.txt  Baking Powder Biscuits
+6. 06-banana-bread.txt  Banana Bread
+7. 07-banana-muffins.txt  Banana Muffins
+8. 08-berry-crumble.txt  Berry Crumble
+9. 09-blondies.txt  Blondies
+10. 10-blueberry-muffins.txt  Blueberry Muffins
+11. 11-blueberry-scones.txt  Blueberry Scones
+12. 12-bread-pudding.txt  Bread Pudding
+13. 13-brownies.txt  Brownies
+14. 14-carrot-cake.txt  Carrot Cake
+15. 15-cheddar-biscuits.txt  Cheddar Biscuits
+16. 16-chocolate-cake.txt  Chocolate Cake
+17. 17-chocolate-chip-cookie-bars.txt  Chocolate Chip Cookie Bars
+18. 18-chocolate-chip-cookies.txt  Chocolate Chip Cookies
+19. 19-chocolate-chip-muffins.txt  Chocolate Chip Muffins
+20. 20-chocolate-cream-pie.txt  Chocolate Cream Pie
+21. 21-chocolate-cupcakes.txt  Chocolate Cupcakes
+22. 22-cinnamon-rolls.txt  Cinnamon Rolls
+23. 23-coconut-macaroons.txt  Coconut Macaroons
+24. 24-coffee-cake.txt  Coffee Cake
+25. 25-corn-muffins.txt  Corn Muffins
+26. 26-cornbread.txt  Cornbread
+27. 27-cream-scones.txt  Cream Scones
+28. 28-dinner-rolls.txt  Dinner Rolls
+29. 29-focaccia.txt  Focaccia
+30. 30-gingerbread.txt  Gingerbread
+31. 31-irish-soda-bread.txt  Irish Soda Bread
+32. 32-key-lime-pie.txt  Key Lime Pie
+33. 33-lemon-bars.txt  Lemon Bars
+34. 34-lemon-loaf.txt  Lemon Loaf
+35. 35-molasses-cookies.txt  Molasses Cookies
+36. 36-monkey-bread.txt  Monkey Bread
+37. 37-no-bake-cheesecake.txt  No-Bake Cheesecake
+38. 38-no-bake-peanut-butter-cookies.txt  No-Bake Peanut Butter Cookies
+39. 39-oatmeal-bars.txt  Oatmeal Bars
+40. 40-oatmeal-raisin-cookies.txt  Oatmeal Raisin Cookies
+41. 41-peach-cobbler.txt  Peach Cobbler
+42. 42-peanut-butter-cookies.txt  Peanut Butter Cookies
+43. 43-pecan-pie.txt  Pecan Pie
+44. 44-pie-crust.txt  Pie Crust
+45. 45-pound-cake.txt  Pound Cake
+46. 46-pumpkin-bread.txt  Pumpkin Bread
+47. 47-pumpkin-muffins.txt  Pumpkin Muffins
+48. 48-pumpkin-pie.txt  Pumpkin Pie
+49. 49-rice-cereal-treats.txt  Rice Cereal Treats
+50. 50-shortbread-cookies.txt  Shortbread Cookies
+51. 51-simple-sandwich-bread.txt  Simple Sandwich Bread
+52. 52-snickerdoodles.txt  Snickerdoodles
+53. 53-strawberry-shortcake.txt  Strawberry Shortcake
+54. 54-sugar-cookies.txt  Sugar Cookies
+55. 55-thumbprint-cookies.txt  Thumbprint Cookies
+56. 56-vanilla-cupcakes.txt  Vanilla Cupcakes
+57. 57-yellow-cake.txt  Yellow Cake
+58. 58-zucchini-bread.txt  Zucchini Bread
+
+MIDNIGHT SNACKS
+
+1. 01-popcorn.txt  Popcorn
+2. 02-ants-on-a-log.txt  Ants on a Log
+3. 03-apple-slices-with-peanut-butter.txt  Apple Slices with Peanut Butter
+4. 04-cereal-and-milk.txt  Cereal and Milk
+5. 05-cheese-and-crackers.txt  Cheese and Crackers
+6. 06-cheese-quesadilla.txt  Cheese Quesadilla
+7. 07-chili-cheese-fries.txt  Chili Cheese Fries
+8. 08-chips-and-salsa.txt  Chips and Salsa
+9. 09-chocolate-dipped-pretzels.txt  Chocolate-Dipped Pretzels
+10. 10-cottage-cheese-and-fruit.txt  Cottage Cheese and Fruit
+11. 11-english-muffin-pizzas.txt  English Muffin Pizzas
+12. 12-frozen-burrito-reheat.txt  Frozen Burrito Reheat
+13. 13-garlic-cheese-toast.txt  Garlic Cheese Toast
+14. 14-grilled-cheese.txt  Grilled Cheese
+15. 15-hot-chocolate.txt  Hot Chocolate
+16. 16-hummus-and-pita.txt  Hummus and Pita
+17. 17-ice-cream-sundae.txt  Ice Cream Sundae
+18. 18-leftover-fried-rice.txt  Leftover Fried Rice
+19. 19-leftover-pizza-reheat.txt  Leftover Pizza Reheat
+20. 20-microwave-baked-potato.txt  Microwave Baked Potato
+21. 21-microwave-nachos.txt  Microwave Nachos
+22. 22-milkshake.txt  Milkshake
+23. 23-mozzarella-sticks.txt  Mozzarella Sticks
+24. 24-mug-brownie.txt  Mug Brownie
+25. 25-mug-cake.txt  Mug Cake
+26. 26-nachos.txt  Nachos
+27. 27-oven-fries.txt  Oven Fries
+28. 28-peanut-butter-and-jelly-sandwich.txt  Peanut Butter and Jelly Sandwich
+29. 29-queso-and-chips.txt  Queso and Chips
+30. 30-ramen-noodle-bowl.txt  Ramen Noodle Bowl
+31. 31-root-beer-float.txt  Root Beer Float
+32. 32-smores.txt  Smores
+33. 33-soft-pretzels-with-mustard.txt  Soft Pretzels with Mustard
+34. 34-toast-with-peanut-butter-and-banana.txt  Toast with Peanut Butter and Banana
+35. 35-trail-mix.txt  Trail Mix
+36. 36-yogurt-with-granola.txt  Yogurt with Granola
+
+MISC
+
+1. 01-boneless-wings.txt  Boneless Wings
+2. 02-jalapeno-poppers.txt  Jalapeno Poppers
+3. 03-applesauce.txt  Applesauce
+4. 04-baked-beans.txt  Baked Beans
+5. 05-baked-potatoes.txt  Baked Potatoes
+6. 06-bread-stuffing.txt  Bread Stuffing
+7. 07-brown-gravy.txt  Brown Gravy
+8. 08-brown-rice.txt  Brown Rice
+9. 09-bruschetta.txt  Bruschetta
+10. 10-buffalo-chicken-dip.txt  Buffalo Chicken Dip
+11. 11-buttered-noodles.txt  Buttered Noodles
+12. 12-caprese-skewers.txt  Caprese Skewers
+13. 13-cheese-sauce.txt  Cheese Sauce
+14. 14-chocolate-frosting.txt  Chocolate Frosting
+15. 15-cocktail-sauce.txt  Cocktail Sauce
+16. 16-coleslaw.txt  Coleslaw
+17. 17-corn-on-the-cob.txt  Corn on the Cob
+18. 18-couscous.txt  Couscous
+19. 19-cranberry-sauce.txt  Cranberry Sauce
+20. 20-cream-cheese-frosting.txt  Cream Cheese Frosting
+21. 21-creamed-corn.txt  Creamed Corn
+22. 22-deviled-eggs.txt  Deviled Eggs
+23. 23-french-fries.txt  French Fries
+24. 24-fruit-and-cheese-plate.txt  Fruit and Cheese Plate
+25. 25-fruit-punch.txt  Fruit Punch
+26. 26-garlic-bread.txt  Garlic Bread
+27. 27-glazed-carrots.txt  Glazed Carrots
+28. 28-green-beans-with-butter.txt  Green Beans with Butter
+29. 29-guacamole.txt  Guacamole
+30. 30-hot-apple-cider.txt  Hot Apple Cider
+31. 31-hummus.txt  Hummus
+32. 32-iced-coffee.txt  Iced Coffee
+33. 33-iced-tea.txt  Iced Tea
+34. 34-lemonade.txt  Lemonade
+35. 35-limeade.txt  Limeade
+36. 36-macaroni-salad.txt  Macaroni Salad
+37. 37-marinara-sauce.txt  Marinara Sauce
+38. 38-mashed-potatoes.txt  Mashed Potatoes
+39. 39-pigs-in-a-blanket.txt  Pigs in a Blanket
+40. 40-pizza-sauce.txt  Pizza Sauce
+41. 41-polenta.txt  Polenta
+42. 42-potato-salad.txt  Potato Salad
+43. 43-queso.txt  Queso
+44. 44-quinoa.txt  Quinoa
+45. 45-ranch-dip.txt  Ranch Dip
+46. 46-refried-beans.txt  Refried Beans
+47. 47-rice.txt  Rice
+48. 48-rice-pilaf.txt  Rice Pilaf
+49. 49-roasted-asparagus.txt  Roasted Asparagus
+50. 50-roasted-brussels-sprouts.txt  Roasted Brussels Sprouts
+51. 51-roasted-potatoes.txt  Roasted Potatoes
+52. 52-roasted-sweet-potatoes.txt  Roasted Sweet Potatoes
+53. 53-roasted-vegetables.txt  Roasted Vegetables
+54. 54-salsa.txt  Salsa
+55. 55-sauteed-spinach.txt  Sauteed Spinach
+56. 56-seven-layer-dip.txt  Seven Layer Dip
+57. 57-shrimp-cocktail.txt  Shrimp Cocktail
+58. 58-simple-vinaigrette.txt  Simple Vinaigrette
+59. 59-spinach-artichoke-dip.txt  Spinach Artichoke Dip
+60. 60-steamed-broccoli.txt  Steamed Broccoli
+61. 61-stuffed-mushrooms.txt  Stuffed Mushrooms
+62. 62-tartar-sauce.txt  Tartar Sauce
+63. 63-tzatziki.txt  Tzatziki
+64. 64-vanilla-frosting.txt  Vanilla Frosting
+65. 65-whipped-cream.txt  Whipped Cream
