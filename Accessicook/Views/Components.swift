@@ -222,18 +222,15 @@ struct LabeledCountRow: View {
     let count: Int
     let noun: String
     let plural: String
+    @Environment(\.colorScheme) private var scheme
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 2) {
-            Text(title)
-                .font(.body.weight(.semibold))
-                .fixedSize(horizontal: false, vertical: true)
-            Text("\(count) \(count == 1 ? noun : plural)")
-                .font(.subheadline)
-                .readableSecondary()
-        }
-        .padding(.vertical, 4)
-        .accessibilityElement(children: .combine)
+        Text("\(title), \(count) \(count == 1 ? noun : plural)")
+            .font(.body.weight(.semibold))
+            .foregroundStyle(scheme == .dark ? Color.white : Color.black)
+            .fixedSize(horizontal: false, vertical: true)
+            .padding(.vertical, 6)
+            .frame(maxWidth: .infinity, minHeight: 44, alignment: .leading)
     }
 }
 
