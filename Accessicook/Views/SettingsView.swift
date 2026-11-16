@@ -132,7 +132,6 @@ struct TextSizePickerView: View {
             ForEach(TextSizeOption.allCases) { option in
                 Button {
                     textSize = option
-                    dismiss()
                 } label: {
                     HStack(spacing: 12) {
                         Text(option.title)

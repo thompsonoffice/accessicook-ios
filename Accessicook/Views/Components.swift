@@ -60,8 +60,9 @@ struct MissingEntryView: View {
 
 /// Supporting text uses the label color so it stays above the contrast minimum in light and dark mode.
 struct ReadableSecondary: ViewModifier {
+    @Environment(\.colorScheme) private var scheme
     func body(content: Content) -> some View {
-        content.foregroundStyle(Color(uiColor: .label))
+        content.foregroundStyle(scheme == .dark ? Color.white : Color.black)
     }
 }
 
@@ -105,14 +106,16 @@ struct DetailSection<Content: View>: View {
 
 struct BodyText: View {
     let text: String
+    @Environment(\.colorScheme) private var scheme
     init(_ text: String) { self.text = text }
     var body: some View {
         Text(text)
             .font(.body)
-            .foregroundStyle(Color(uiColor: .label))
+            .foregroundStyle(scheme == .dark ? Color.white : Color.black)
             .frame(maxWidth: .infinity, alignment: .leading)
             .fixedSize(horizontal: false, vertical: true)
-            .background(Color(uiColor: .systemBackground))
+            .padding(.vertical, 1)
+            .background(scheme == .dark ? Color.black : Color.white)
     }
 }
 
@@ -323,7 +326,6 @@ struct LargeTextButton: View {
     /// Filled buttons use the dark accent color with white text. Outlined buttons use primary text.
     var prominent: Bool = true
     let action: () -> Void
-    @Environment(\.colorSchemeContrast) private var contrast
 
     var body: some View {
         let button = Button(action: action) {

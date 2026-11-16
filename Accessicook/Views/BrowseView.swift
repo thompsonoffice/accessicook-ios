@@ -52,6 +52,7 @@ struct BrowseView: View {
                 }
             }
             .navigationTitle("Accessicook")
+            .tint(Color(uiColor: .label))
             .accessicookDestinations()
         }
     }
