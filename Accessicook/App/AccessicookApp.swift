@@ -1,4 +1,5 @@
 import SwiftUI
+import UIKit
 
 extension CookbookStore: ObservableObject {}
 
@@ -10,6 +11,7 @@ struct AccessicookApp: App {
     private let loaded: Result<CookbookStore, Error>
 
     init() {
+        AccessicookApp.configureOpaqueBars()
         let defaults = AccessicookApp.makeDefaults()
         self.defaults = defaults
         _favorites = StateObject(wrappedValue: FavoritesStore(defaults: defaults))
@@ -24,6 +26,27 @@ struct AccessicookApp: App {
               let suite = UserDefaults(suiteName: "AccessicookUITesting") else { return .standard }
         suite.removePersistentDomain(forName: "AccessicookUITesting")
         return suite
+    }
+
+    /// Opaque bars with the label color, so unselected tab and title text clears the contrast audit.
+    private static func configureOpaqueBars() {
+        let tab = UITabBarAppearance()
+        tab.configureWithOpaqueBackground()
+        let normal = tab.stackedLayoutAppearance.normal
+        normal.iconColor = .label
+        normal.titleTextAttributes = [.foregroundColor: UIColor.label]
+        let selected = tab.stackedLayoutAppearance.selected
+        selected.iconColor = UIColor(red: 0.043, green: 0.227, blue: 0.431, alpha: 1)
+        selected.titleTextAttributes = [.foregroundColor: UIColor(red: 0.043, green: 0.227, blue: 0.431, alpha: 1)]
+        UITabBar.appearance().standardAppearance = tab
+        UITabBar.appearance().scrollEdgeAppearance = tab
+
+        let navigation = UINavigationBarAppearance()
+        navigation.configureWithOpaqueBackground()
+        navigation.titleTextAttributes = [.foregroundColor: UIColor.label]
+        navigation.largeTitleTextAttributes = [.foregroundColor: UIColor.label]
+        UINavigationBar.appearance().standardAppearance = navigation
+        UINavigationBar.appearance().scrollEdgeAppearance = navigation
     }
 
     var body: some Scene {

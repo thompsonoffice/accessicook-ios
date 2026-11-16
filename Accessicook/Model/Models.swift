@@ -72,6 +72,7 @@ enum Route: Hashable {
     case cook(String)
     case recents
     case settings
+    case textSize
     case about
     case privacy
 }

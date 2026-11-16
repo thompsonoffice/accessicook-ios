@@ -40,6 +40,8 @@ struct RouteView: View {
             RecentsView()
         case .settings:
             SettingsView()
+        case .textSize:
+            TextSizePickerView()
         case .about:
             AboutView()
         case .privacy:
@@ -56,18 +58,10 @@ struct MissingEntryView: View {
     }
 }
 
-/// Secondary text that stays above the contrast minimum. Increased Contrast uses the primary color.
+/// Supporting text uses the label color so it stays above the contrast minimum in light and dark mode.
 struct ReadableSecondary: ViewModifier {
-    @Environment(\.colorScheme) private var scheme
-    @Environment(\.colorSchemeContrast) private var contrast
-
     func body(content: Content) -> some View {
-        content.foregroundStyle(Self.color(scheme: scheme, contrast: contrast))
-    }
-
-    static func color(scheme: ColorScheme, contrast: ColorSchemeContrast) -> Color {
-        if contrast == .increased { return .primary }
-        return scheme == .dark ? Color(white: 0.92) : Color(white: 0.24)
+        content.foregroundStyle(Color(uiColor: .label))
     }
 }
 
@@ -115,8 +109,10 @@ struct BodyText: View {
     var body: some View {
         Text(text)
             .font(.body)
-            .fixedSize(horizontal: false, vertical: true)
+            .foregroundStyle(Color(uiColor: .label))
             .frame(maxWidth: .infinity, alignment: .leading)
+            .fixedSize(horizontal: false, vertical: true)
+            .background(Color(uiColor: .systemBackground))
     }
 }
 

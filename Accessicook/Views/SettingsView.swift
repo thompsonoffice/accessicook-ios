@@ -56,12 +56,19 @@ struct SettingsView: View {
     var body: some View {
         Form {
             Section {
-                Picker("Text size", selection: $textSize) {
-                    ForEach(TextSizeOption.allCases) { option in
-                        Text(option.title).tag(option)
+                NavigationLink(value: Route.textSize) {
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text("Text size")
+                            .font(.body.weight(.semibold))
+                            .foregroundStyle(Color(uiColor: .label))
+                        Text(textSize.title)
+                            .font(.body)
+                            .foregroundStyle(Color(uiColor: .label))
+                            .fixedSize(horizontal: false, vertical: true)
                     }
+                    .frame(maxWidth: .infinity, minHeight: 44, alignment: .leading)
+                    .accessibilityElement(children: .combine)
                 }
-                .pickerStyle(.navigationLink)
                 Text("Sample: Heat the oven to 425 degrees F, then bake until the center feels set.")
                     .font(.body)
                     .fixedSize(horizontal: false, vertical: true)
@@ -112,6 +119,39 @@ struct SettingsView: View {
             Button("Remove All Favorites", role: .destructive) { favorites.removeAll() }
             Button("Cancel", role: .cancel) {}
         }
+    }
+}
+
+/// Each size is its own button, so VoiceOver and the UI tests can choose one directly.
+struct TextSizePickerView: View {
+    @AppStorage(TextSizeOption.storageKey) private var textSize: TextSizeOption = .system
+    @Environment(\.dismiss) private var dismiss
+
+    var body: some View {
+        List {
+            ForEach(TextSizeOption.allCases) { option in
+                Button {
+                    textSize = option
+                    dismiss()
+                } label: {
+                    HStack(spacing: 12) {
+                        Text(option.title)
+                            .font(.body)
+                            .foregroundStyle(Color(uiColor: .label))
+                            .frame(maxWidth: .infinity, minHeight: 44, alignment: .leading)
+                            .fixedSize(horizontal: false, vertical: true)
+                        if textSize == option {
+                            Image(systemName: "checkmark")
+                                .accessibilityHidden(true)
+                        }
+                    }
+                }
+                .accessibilityLabel(option.title)
+                .accessibilityAddTraits(textSize == option ? .isSelected : [])
+            }
+        }
+        .navigationTitle("Text size")
+        .inlineTitle()
     }
 }
 

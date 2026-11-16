@@ -68,14 +68,18 @@ struct RecipeDetailView: View {
     private func summary(categoryName: String) -> String {
         if entry.isLesson { return "\(categoryName) lesson" }
         var parts = [categoryName]
-        if let difficulty = firstLine(entry.difficulty) { parts.append(difficulty) }
-        if let time = firstLine(entry.totalTime) { parts.append(time) }
-        if let servings = firstLine(entry.servings) { parts.append(servings) }
+        if let difficulty = shortFact(entry.difficulty) { parts.append(difficulty) }
+        if let time = shortFact(entry.totalTime) { parts.append(time) }
         return parts.joined(separator: ". ")
     }
 
-    private func firstLine(_ text: String?) -> String? {
+    /// The first sentence, kept short so the page opens on the headings instead of a repeated essay.
+    private func shortFact(_ text: String?) -> String? {
         guard let text else { return nil }
-        return text.split(whereSeparator: \.isNewline).first.map(String.init)
+        guard let line = text.split(whereSeparator: \.isNewline).first else { return nil }
+        let sentence = line.split(separator: ".").first.map(String.init) ?? String(line)
+        let trimmed = sentence.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !trimmed.isEmpty, trimmed.count <= 80 else { return nil }
+        return trimmed
     }
 }
