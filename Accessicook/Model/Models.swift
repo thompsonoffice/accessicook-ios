@@ -29,13 +29,14 @@ struct Entry: Codable, Identifiable, Hashable {
     var servings: String?
     var totalTime: String?
     var difficulty: String?
-    var sections: [Section]
+    var sections: [RecipeSection]
 
     var isLesson: Bool { kind == "lesson" }
     var noun: String { isLesson ? "lesson" : "recipe" }
 }
 
-struct Section: Codable, Identifiable, Hashable {
+/// One headed block of a recipe or lesson. Named so it does not shadow SwiftUI.Section.
+struct RecipeSection: Codable, Identifiable, Hashable {
     var id: String
     var title: String
     var isSteps: Bool

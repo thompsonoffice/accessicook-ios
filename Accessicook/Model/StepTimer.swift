@@ -105,7 +105,7 @@ enum CookPlan {
         entry.sections.filter(\.isSteps).flatMap { methods(in: $0) }
     }
 
-    static func methods(in section: Section) -> [CookMethod] {
+    static func methods(in section: RecipeSection) -> [CookMethod] {
         var result: [CookMethod] = []
         var title = section.title
         var steps: [CookStep] = []
