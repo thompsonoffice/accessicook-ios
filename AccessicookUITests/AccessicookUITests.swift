@@ -186,7 +186,9 @@ final class AccessicookUITests: XCTestCase {
     }
 
     func testAccessibilityAuditMainScreens() {
-        tab("Browse"); audit("Browse")
+        tab("Browse")
+        XCTAssertTrue(app.staticTexts["Categories"].waitForExistence(timeout: 10))
+        audit("Browse")
         tapRow("Kitchen Basics"); audit("Kitchen Basics")
         goBack()
         tab("Search"); audit("Search")
