@@ -125,7 +125,6 @@ struct SettingsView: View {
 /// Each size is its own button, so VoiceOver and the UI tests can choose one directly.
 struct TextSizePickerView: View {
     @AppStorage(TextSizeOption.storageKey) private var textSize: TextSizeOption = .system
-    @Environment(\.dismiss) private var dismiss
 
     var body: some View {
         List {

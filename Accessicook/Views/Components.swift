@@ -72,12 +72,13 @@ extension View {
 
 struct SectionHeader: View {
     let title: String
+    @Environment(\.colorScheme) private var scheme
     init(_ title: String) { self.title = title }
 
     var body: some View {
         Text(title)
             .font(.headline)
-            .foregroundStyle(.primary)
+            .foregroundStyle(scheme == .dark ? Color.white : Color.black)
             .accessibilityAddTraits(.isHeader)
             .textCase(nil)
     }

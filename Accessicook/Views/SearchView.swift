@@ -55,7 +55,7 @@ struct SearchView: View {
             }
             .searchable(text: $query,
                         placement: .navigationBarDrawer(displayMode: .always),
-                        prompt: "Recipes, lessons, ingredients")
+                        prompt: "Search")
             .autocorrectionDisabled()
             .textInputAutocapitalization(.never)
             .navigationTitle("Search")
