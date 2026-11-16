@@ -37,7 +37,9 @@ struct FavoritesView: View {
                 }
                 Section {
                     NavigationLink(value: Route.recents) {
-                        Label("Recently Viewed", systemImage: "clock")
+                        Text("Recently Viewed")
+                            .font(.body)
+                            .frame(maxWidth: .infinity, minHeight: 44, alignment: .leading)
                     }
                 } header: {
                     SectionHeader("Also on this iPhone")

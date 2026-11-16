@@ -38,20 +38,20 @@ struct MoreView: View {
             List {
                 Section {
                     NavigationLink(value: Route.settings) {
-                        Label("Settings", systemImage: "gearshape")
+                        Text("Settings").font(.body).frame(maxWidth: .infinity, minHeight: 44, alignment: .leading)
                     }
                     NavigationLink(value: Route.recents) {
-                        Label("Recently Viewed", systemImage: "clock")
+                        Text("Recently Viewed").font(.body).frame(maxWidth: .infinity, minHeight: 44, alignment: .leading)
                     }
                 } header: {
                     SectionHeader("On this iPhone")
                 }
                 Section {
                     NavigationLink(value: Route.about) {
-                        Label("About Accessicook", systemImage: "info.circle")
+                        Text("About Accessicook").font(.body).frame(maxWidth: .infinity, minHeight: 44, alignment: .leading)
                     }
                     NavigationLink(value: Route.privacy) {
-                        Label("Privacy Policy", systemImage: "hand.raised")
+                        Text("Privacy Policy").font(.body).frame(maxWidth: .infinity, minHeight: 44, alignment: .leading)
                     }
                 } header: {
                     SectionHeader("About")
