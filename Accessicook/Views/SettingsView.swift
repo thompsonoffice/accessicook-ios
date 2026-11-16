@@ -56,6 +56,9 @@ struct SettingsView: View {
     var body: some View {
         Form {
             Section {
+                Text("Text")
+                    .font(.title2.weight(.bold))
+                    .accessibilityAddTraits(.isHeader)
                 NavigationLink(value: Route.textSize) {
                     VStack(alignment: .leading, spacing: 2) {
                         Text("Text size")
@@ -76,11 +79,12 @@ struct SettingsView: View {
                 Text("Every screen uses Dynamic Type. Use iPhone setting follows Settings, Accessibility, Display and Text Size. This includes the largest accessibility sizes.")
                     .font(.body)
                     .fixedSize(horizontal: false, vertical: true)
-            } header: {
-                SectionHeader("Text")
             }
 
             Section {
+                Text("Display")
+                    .font(.title2.weight(.bold))
+                    .accessibilityAddTraits(.isHeader)
                 LabeledStatus(title: "Increase Contrast",
                               value: contrast == .increased ? "On" : "Off, using the iPhone setting")
                 LabeledStatus(title: "Reduce Motion",
@@ -88,11 +92,12 @@ struct SettingsView: View {
                 Text("Accessicook follows Increase Contrast, Bold Text, Reduce Motion, Differentiate Without Color, and Dark Mode from iPhone Settings. It does not replace those switches.")
                     .font(.body)
                     .fixedSize(horizontal: false, vertical: true)
-            } header: {
-                SectionHeader("Display")
             }
 
             Section {
+                Text("Saved on This iPhone")
+                    .font(.title3.weight(.bold))
+                    .accessibilityAddTraits(.isHeader)
                 if recents.keys.isEmpty && favorites.keys.isEmpty {
                     Text("Nothing is saved yet.")
                         .font(.body)
@@ -107,8 +112,6 @@ struct SettingsView: View {
                 Text("Favorites, recently viewed pages, and the text size setting stay on this iPhone. Nothing is sent anywhere.")
                     .font(.body)
                     .fixedSize(horizontal: false, vertical: true)
-            } header: {
-                SectionHeader("Saved on This iPhone")
             }
         }
         .navigationTitle("Settings")

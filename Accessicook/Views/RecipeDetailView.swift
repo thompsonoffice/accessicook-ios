@@ -60,7 +60,7 @@ struct RecipeDetailView: View {
             .frame(maxWidth: 800, alignment: .leading)
             .frame(maxWidth: .infinity, alignment: .leading)
         }
-        .navigationTitle(entry.isLesson ? "Lesson" : "Recipe")
+        .navigationTitle("")
         .inlineTitle()
         .onAppear { recents.record(SavedKey.recipe(entry.id)) }
     }
