@@ -15,6 +15,7 @@ struct AboutView: View {
             VStack(alignment: .leading, spacing: 24) {
                 Text("About Accessicook")
                     .font(.largeTitle.weight(.bold))
+                    .foregroundStyle(Color(uiColor: .label))
                     .accessibilityAddTraits(.isHeader)
                     .fixedSize(horizontal: false, vertical: true)
                 DetailSection("What this is") {
@@ -52,7 +53,9 @@ struct AboutView: View {
             .padding()
             .frame(maxWidth: 800, alignment: .leading)
             .frame(maxWidth: .infinity, alignment: .leading)
+            .background(Color(uiColor: .systemBackground))
         }
+        .background(Color(uiColor: .systemBackground))
         .navigationTitle("About")
         .inlineTitle()
     }
@@ -64,9 +67,12 @@ struct LabeledFact: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 2) {
-            Text(label).font(.subheadline.weight(.semibold))
+            Text(label)
+                .font(.body.weight(.semibold))
+                .foregroundStyle(Color(uiColor: .label))
             Text(value)
                 .font(.body)
+                .foregroundStyle(Color(uiColor: .label))
                 .fixedSize(horizontal: false, vertical: true)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
@@ -90,7 +96,9 @@ struct PrivacyPolicyView: View {
             .padding()
             .frame(maxWidth: 800, alignment: .leading)
             .frame(maxWidth: .infinity, alignment: .leading)
+            .background(Color(uiColor: .systemBackground))
         }
+        .background(Color(uiColor: .systemBackground))
         .navigationTitle("Privacy Policy")
         .inlineTitle()
     }

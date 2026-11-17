@@ -59,7 +59,9 @@ struct RecipeDetailView: View {
             .padding()
             .frame(maxWidth: 800, alignment: .leading)
             .frame(maxWidth: .infinity, alignment: .leading)
+            .background(Color(uiColor: .systemBackground))
         }
+        .background(Color(uiColor: .systemBackground))
         .navigationTitle("")
         .inlineTitle()
         .onAppear { recents.record(SavedKey.recipe(entry.id)) }

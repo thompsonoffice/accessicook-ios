@@ -97,6 +97,7 @@ struct DetailSection<Content: View>: View {
         VStack(alignment: .leading, spacing: 8) {
             Text(title)
                 .font(.title2.weight(.bold))
+                .foregroundStyle(Color(uiColor: .label))
                 .accessibilityAddTraits(.isHeader)
                 .fixedSize(horizontal: false, vertical: true)
             content
@@ -107,16 +108,13 @@ struct DetailSection<Content: View>: View {
 
 struct BodyText: View {
     let text: String
-    @Environment(\.colorScheme) private var scheme
     init(_ text: String) { self.text = text }
     var body: some View {
         Text(text)
             .font(.body)
-            .foregroundStyle(scheme == .dark ? Color.white : Color.black)
+            .foregroundStyle(Color(uiColor: .label))
             .frame(maxWidth: .infinity, alignment: .leading)
             .fixedSize(horizontal: false, vertical: true)
-            .padding(.vertical, 1)
-            .background(scheme == .dark ? Color.black : Color.white)
     }
 }
 
