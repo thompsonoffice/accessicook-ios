@@ -43,7 +43,7 @@ struct AboutView: View {
                     BodyText("Favorite and Recently Viewed are saved on this iPhone only.")
                 }
                 DetailSection("Privacy") {
-                    BodyText("Accessicook collects no data. It is a paid app. The price is set on the App Store. There is nothing else to buy inside the app, and no link to buy it somewhere else.")
+                    BodyText("Accessicook collects no data. It is a paid app. The price is $3.99 on the App Store. There is nothing else to buy inside the app, and no link to buy it somewhere else.")
                     NavigationLink("Read the privacy policy", value: Route.privacy)
                         .frame(minHeight: 44, alignment: .leading)
                 }

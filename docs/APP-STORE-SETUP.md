@@ -2,7 +2,7 @@
 
 Nothing here can happen until Apple finishes the developer enrollment (status changes from "Apple Developer, pending" and the "Welcome to the Apple Developer Program" email arrives). Do not sign, upload, or submit until then. The TestFlight workflow stays skipped until the secrets below exist and `ENABLE_TESTFLIGHT_UPLOAD` is set to `true`.
 
-Accessicook will be a paid app. The price is set later in App Store Connect. The app does not link to an outside store, and it does not use In-App Purchase.
+Accessicook will be a paid app at $3.99. Set that price in App Store Connect. The app does not link to an outside store, and it does not use In-App Purchase.
 
 ## 1. App Store Connect basics (once)
 
@@ -44,7 +44,7 @@ Never paste the `.p8` key or its contents into chat, email, or the repository; o
 
 ## 5. App Store listing checklist
 
-- Price: set later under Pricing and Availability. Paid app. No free-with-purchase-outside, and no link to another store.
+- Price: $3.99 under Pricing and Availability. Paid app. No free-with-purchase-outside, and no link to another store.
 - Category: Food & Drink.
 - Age rating questionnaire: no objectionable content. The book leaves out deep frying on purpose.
 - App Privacy: "Data Not Collected" (the app has no analytics, accounts, ads, tracking, or network calls). Privacy policy URL: host `docs/PRIVACY-POLICY.md` somewhere public and paste its link. The same text is in the app.

@@ -3,7 +3,7 @@
 A native SwiftUI iPhone app (iOS 17+) of Accessicook, a cookbook for blind and low-vision cooks. Fully offline, VoiceOver-first, no data collection.
 
 - Content: 13 Kitchen Basics lessons and 327 recipes in six categories (Breakfast, Lunch, Supper, Baked Goods, Midnight Snacks, and Misc), converted from the plain-text book in `content/Accessicook` by `tools/export_cookbook.py`.
-- Planned listing: App Store, paid (price set later), category Food & Drink, privacy label **Data Not Collected**. The app does not link out to sell itself, and it has no ads or tracking.
+- Planned listing: App Store, $3.99, category Food & Drink, privacy label **Data Not Collected**. The app does not link out to sell itself, and it has no ads or tracking.
 
 ## Features
 
